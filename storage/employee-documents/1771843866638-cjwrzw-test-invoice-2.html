@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Invoice 2</title>
+    <style>
+      body { font-family: 'Courier New', monospace; background: #fff9f2; padding: 36px; }
+      .invoice { background: #fff; max-width: 760px; margin: 0 auto; padding: 28px; border: 1px solid #f0dcc2; }
+      .meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 14px 0 20px; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { text-align: left; border-bottom: 1px solid #f0dcc2; padding: 7px 4px; }
+      .totals { margin-top: 14px; text-align: right; }
+    </style>
+  </head>
+  <body>
+    <div class="invoice">
+      <h1>Harbor Foods Distribution</h1>
+      <p>19 Dock Road, Seattle, WA 98104</p>
+      <h2>Purchase Invoice</h2>
+      <div class="meta">
+        <div>
+          <strong>Invoice #:</strong> HFD-INV-33072<br />
+          <strong>Invoice Date:</strong> 2026-02-09
+        </div>
+        <div>
+          <strong>Bill To:</strong> Evergreen Grocery LLC<br />
+          998 Union St, Seattle, WA 98101
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>SKU</th><th>Description</th><th>Qty</th><th>Unit Price</th><th>Line Total</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>PASTA-1KG</td><td>Durum Pasta 1kg</td><td>25</td><td>2.80</td><td>70.00</td></tr>
+          <tr><td>TOM-SAUCE</td><td>Tomato Sauce 700g</td><td>30</td><td>1.95</td><td>58.50</td></tr>
+          <tr><td>BEAN-CAN</td><td>Baked Beans 400g</td><td>40</td><td>1.20</td><td>48.00</td></tr>
+          <tr><td>OLIVE-1L</td><td>Olive Oil 1L</td><td>10</td><td>8.75</td><td>87.50</td></tr>
+        </tbody>
+      </table>
+      <div class="totals">
+        <p>Subtotal: 264.00</p>
+        <p>Tax (9.50%): 25.08</p>
+        <p><strong>Grand Total: 289.08</strong></p>
+        <p>Currency: USD</p>
+      </div>
+    </div>
+  </body>
+</html>
